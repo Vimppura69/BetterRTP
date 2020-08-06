@@ -1,0 +1,65 @@
+Messages:
+  Prefix: '&7[&6BetterRTP&7] '
+  Success: ## Placeholders! %x% %y% and %z% are the x, y, and z coordinates that the player is being teleported to! #
+    Paid: '&aSinut teleportattiin sijaintiin&7 x=%x% y=%y% z=%z% hintaan &c$%price%&7 &f%attempts% &7yrityskerralla!'
+    Bypass: '&aSinut teleportattiin sijaintiin &7 x=%x% y=%y% z=%z% &f%attempts% &7yrityskerralla!'
+    Loading: '&aTurvallinen paikka löydetty! &7Ladataan aluetta...'
+  Failed:
+    Price: '&cTeleporttaus epäonnistui sillä sinulla ei ole tarpeeksi rahaa! &7Sinulla tulee olla vähintään $%price% &7teleporttaaksesi!'
+    NotSafe: '&cTurvallista teleporttauspaikkaa ei löytynyt %attempts% yrityskerralla! &7Sinua ei teleportattu!'
+  Other:
+    Success: '&aPelaaja %player% teleportattiin sijaintiin &7 x=%x% y=%y% z=%z% &f%attempts% &7yrityskerralla!'
+    NotSafe: '&cTurvallista teleporttauspaikkaa ei löytynyt %attempts% yrityskerralla! &7Pelaajaa %player% ei teleportattu!'
+    Biome: '&cNäyttää siltä että biomia&7 %biome%&c ei ole olemassa! &7Kokeile käyttää tab-listausta!'
+  Reload: '&eAsetukset uudelleenladattu onnistuneesti!'
+  NoPermission:
+    Basic: '&cPahoittelut! &7Sinulla ei ole oikeutta käyttää tuota komentoa!'
+    World: '&cPahoittelut! &7Sinulla ei ole oikeutta teleportata maailmassa %world%!'
+  ## %world% is the world the player is in that is disabled to rtp in! #
+  DisabledWorld: '&cMaailma %world% on poistettu käytöstä! &7Teleporttaus epäonnistui!'
+  Cooldown: '&cPahoittelut! &7Voit teleportata vasta &c%time% &7sekunnin kuluttua!'
+  Invalid: '&cVirheellinen argumentti. Kokeile ''/%command% help'''
+  NotOnline: '&cPelaaja &7%player% &cei ole paikalla!'
+  Delay: '&aTeleportataan &f%time% &asekunnissa! Älä liiku!'
+  Moved: '&cSinä liikuit! &7Teleporttaus peruutettiin!'
+  NotExist: '&cNäyttää siltä, että maailmaa &7%world% &cei ole olemassa!'
+  Already: '&cHupsis! &7Näyttää siltä että olet jo teleporttaamassa, malttia!'
+  Sign: '&7Komentokyltti luotiin onnistuneesti! &7Komento on... ''&f/rtp %command%&7'''
+
+Titles:
+  Enabled: true
+  Delay:
+    ## Setting to also send the chat message, ignores the Enabled setting
+    SendChatMessage: true
+    ## Both support %player% placeholders
+    Title: '&6SRC:n BetterRTP'
+    Subtitle: '&fTeleportataan %time% sekunnissa'
+  Success:
+    ## Setting to also send the chat message, ignores the Enabled setting
+    SendChatMessage: true
+    ## Both support %player% %x% %y% and %z% placeholders
+    Title: '&6SRC:n BetterRTP &7(%attempts%)'
+    Subtitle: '&fTeleporttiin sijaintiin x=%x% y=%y% z=%z%'
+
+Help:
+  List:
+    - '&e&m------&r &6&lBetterRTP &8| &7Help &e&m------'
+    - ' &7- &e/%command% &7- Satunnaiseen paikkaan teleporttaus'
+    - ' &7- &e/%command% help &7- Lista komennoista'
+  ##If the player has permission to rtp another player, this message will be added under the list!
+  Player: ' &7- &e/%command% player <pelaaja> [maailma] [biomi1, biomi2...] &7- Toisen pelaajan satunnaisteleporttaus'
+  World: ' &7- &e/%command% world <maailma> [biomi1, biomi2...] &7- Satunnaisteleporttaus toiseen maailmaan'
+  ##If the player has permission to reload the plugin this message will be added under the list!
+  Biome: ' &7- &e/%command% biome <biomi1, biomi2...> &7- Satunnaisteleporttaus määritetyille biomeille'
+  Reload: ' &7- &e/%command% reload &7- Pluginin asetusten uudelleenlataus'
+
+Usage:
+  Player: '&cKäyttö&7: /%command% player <pelaaja> [maailma] [biomi1, biomi2]'
+  World: '&cKäyttö&7: /%command% world <maailma> [biomi1, biomi2...]'
+  Biome: '&cKäyttö&7: /%command% biome <biomi1, biomi2...>'
+
+Sounds:
+  Enabled: true
+  ## More sounds at https://www.spigotmc.org/wiki/cc-sounds-list/
+  Delay: 'entity_tnt_primed'
+  Success: 'entity_generic_explode'
